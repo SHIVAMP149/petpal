@@ -1,0 +1,120 @@
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  
+  @keyframes zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+  }
+  
+  /* Container and wrapper styling */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    animation: fadeIn 1s ease;
+  }
+  
+  .form-wrapper {
+    width: 90%;
+    max-width: 400px;
+    padding: 2.5rem;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    animation: slideUp 0.8s ease forwards;
+  }
+  
+  /* Title */
+  .title {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  /* Input styling */
+  .input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+  }
+  
+  .input:focus {
+    border-color: #555;
+    outline: none;
+  }
+  
+  /* Main button styling with animation */
+  .button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    animation: bounce 1.2s infinite alternate;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #333;
+  }
+  
+  /* Divider */
+  .divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Social button styling */
+  .social-button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    animation: zoom 0.3s ease forwards;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .social-button.google {
+    background-color: #db4437;
+    color: #fff;
+  }
+  
+  .social-button.facebook {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  .social-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+  
